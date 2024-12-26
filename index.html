@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    /* Container holding the grid */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    /* Each item inside the grid */
+    #item {
+      background-color: #4caf50;
+      color: white;
+      padding: 20px;
+      margin: 10px;
+      box-sizing: border-box;
+      flex: 30%; /* 30% width of the container, but flexible */
+      text-align: center;
+    }
+
+    /* Make items responsive to screen sizes */
+    @media (max-width: 900px) {
+      #item {
+        flex: 45%; /*  45% width when screen is smaller than 900px */
+      }
+    }
+
+    @media (max-width: 600px) {
+      #item {
+        flex: 100%; /* 100% width when screen is smaller than 600px */
+      }
+    }
+  </style>
+  <body>
+<div class="container-{breakpoint}" style="height: 3000px;">
+    <section id="Home">
+    <div class="container-{breakpoint}">
+      <nav class="navbar navbar-expand-lg bg-black position-fixed w-100  " style="z-index: 100;">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand text-white mt-1 border border-warning border-3"
+            style="width: 140px"
+            href="#"
+          >
+            <img
+              height="30px"
+              src="img/abstract-logo-design-for-any-corporate-brand-business-company-vector-removebg-preview.png"
+              alt=""
+            />ALLROAND</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#feature">Feature</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#Imformation">Imformation</a>
+              </li>
+            </ul>
+            <form class="d-flex me-2 mt-1" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-warning" type="submit">
+                Search
+              </button>
+            </form>
+           <a href="#From"> <button type="button" class="btn btn-warning mt-1">Contact</button></a>
+          </div>
+        </div>
+      </nav>
+<br><br>
+      <div class="container-fluid bg-success p-2 mt-3 bg-opacity-100">
+        <div class="text-center">
+          <h1>ALLROND S <span class="text-warning"> ElECTIRE BIKE</span></h1>
+        </div>
+        <div class="card-group">
+          <div
+            class="card border border-success bg-success p-2 text-dark bg-opacity-100"
+            style="height: 480px"
+          >
+            <div class="card-body">
+              <h3 class="card-title text-warning">Motor</h3>
+              <p class="card-text text-white">Bafang G0H0 hub, 750W</p>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title text-warning">Battery Capacity (Wh)</h3>
+              <p class="card-text text-white">720 watt hours</p>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title text-warning">Weight</h3>
+              <p class="card-text text-white">63 lbs. 12.8 oz.</p>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title text-warning">E-Bike Classification</h3>
+              <p class="card-text text-white">
+                Class 3: pedal assist up to 28 mph
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card mb-4 border border-success bg-success p-2 text-dark bg-opacity-25"
+          >
+            <img
+              src="img/4732cb74-7def-469f-82e4-6824da1704c6-removebg-preview.png"
+              alt=""
+            />
+            <center>
+              <div class="ms-4" style="width: 22rem">
+                <div class="card-body d-flex justify-content-around">
+                  <a
+                    href="#"
+                    class="btn btn-primary w-100 bg-warning text-black"
+                    ><i class="fa-solid fa-bicycle me-3"></i>New BIke</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-primary w-100 ms-5 bg-body-secondary text-black"
+                    ><i class="fa-solid fa-address-book me-3"></i>Contact</a
+                  >
+                </div>
+              </div>
+            </center>
+          </div>
+
+          <div
+            class="card border border-success bg-success p-2 text-dark bg-opacity-25"
+          >
+            <center>
+              <div class="card ms-5 mt-4" style="width: 15rem">
+                <div
+                  id="carouselExampleInterval"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                      <img
+                        src="img/00b30722-4450-44c0-804c-eaf04b3a7a84-removebg-preview.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img
+                        src="img/01c35ed3-bab5-4d5b-8a62-f2224edb7f81-removebg-preview.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img
+                        src="img/06a506d2-275e-49d2-82c1-81eb2521dd32-removebg-preview.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img
+                        src="img/4732cb74-7def-469f-82e4-6824da1704c6-removebg-preview.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="btn btn-warning ms-2"
+                    ><i class="fa-brands fa-amazon-pay me-2"></i>Go somewhere</a
+                  >
+                </div>
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id="Experience"  class="bg-success p-2 text-dark bg-opacity-100" style="height: 100vh;">
+      <br><br><br><br>
+      <div class="-body">
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body" style="height: 500px; ">
+                <h1 class="card-title ms-1">EXPERIENCE</h1>
+               <br> <p class="card-text " >
+                 <ul class="mt-2">
+                  <li> 1 year of free adjustments (see more below) </li>
+                  <li> In-store bike assembly </li>   
+                  <li>An additional year of free adjustments on e-bikes</li>    
+                  <li>20% off shop services</li>         
+                  <li> Pickup in store or curbside </li>  
+                  <li>Bike experts available at 170+ bike shops</li>   
+                  <li>Cannondale model code: C68303M
+                  </li>
+                  <li>Disc brakes are powerful enough to bring it all to a controlled stop no matter the weather or the cargo</li>            
+                 </ul>
+                </p>
+               <br><br> <br><button type="button" class= "btn btn-warning ms-3">
+                  <i class="fa-solid fa-bicycle"></i>
+                  BIKE NEW
+                </button>
+                <button type="button" class="btn btn-secondary ms-2">
+                <i class="fa-solid fa-phone-volume"></i>
+                ODER BIKE
+              </button>       
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 mt-4">
+            <div class="card">
+              <div class="card-body ">
+                <div class="card text-bg-dark">
+                  <img src="img/Screenshot from 2024-12-24 14-02-42.png" class="card-img" alt="...">
+                 
+                </div>              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+   
+      </section>
+
+      <section id="feature"  >
+        <div class="container-fluid bg-success p-2 text-dark bg-opacity-100 " spellcheck="100vh">
+          <div class="text-center"><h1>Fea <span class="text-warning"> tures</span></h1></div>
+          <div class="card-group">
+              <div class="card border border-success bg-success p-2 text-dark bg-opacity-100  " style="height: 480px;">
+                  <div class="card mt-3 border border-success bg-success bg-success p-2 text-dark bg-opacity-100" >
+                      <center><img  style="width: 100px;" src="img/bike-b-removebg-preview.png" class="card-img-top " alt="..."></center>
+                      <div class="card-body">
+                       <h4 class="card-title text-center mb-2 text-warning">Lithium Battery</h4>
+                       <center> <p class="card-text text-white ">1000 cycles of charge</p></center>
+                      </div>
+                    </div>
+                    
+                    <div id="item" class="card mt-5 border border-success bg-success bg-success p-2 text-dark bg-opacity-100" >
+                      <center><img  style="width: 100px;" src="img/battery-removebg-preview.png" class="card-img-top " alt="..."></center>
+                      <div class="card-body">
+                      <h4 class="card-title text-center mb-2 text-warning">   Range Battery </h4>
+                       <center> <p class="card-text text-white ">    40km average</p></center>
+                      </div>
+                    </div>
+               
+              </div>
+            
+              <div class="card mb-4 border border-success bg-success p-2 text-dark bg-opacity-25" >
+                  
+                 <img src="img/4732cb74-7def-469f-82e4-6824da1704c6-removebg-preview.png" alt="">  
+                <center> <div class="  " style="width: 25rem;">
+                  <p><b>ALLROND </b><span class="text-white">can effortlessly reach a speed of 32km/h, easily climb the coast or make trips that would be too long to    
+                  travel with a conventional bike.</span></p>
+                </div>     
+              </center>      
+               
+              </div>
+              <br>
+              <div class="card border border-success bg-success p-2 text-dark bg-opacity-100  " style="height: 480px;">
+                  <div class="card mt-3 border border-success bg-success bg-success p-2 text-dark bg-opacity-100" >
+                      <center><img  style="width: 100px;" src="img/spped-removebg-preview.png" class="card-img-top " alt="..."></center>
+                      <div class="card-body">
+                       <h4 class="card-title text-center mb-2 text-warning" >Speedy</h4>
+                       <center> <p class="card-text text-white ">30Km/h</p></center>
+                      </div>
+                    </div>
+                    
+                    <div  class="card mt-5 border border-success bg-success bg-success p-2 text-dark bg-opacity-100" >
+                      <center><img  style="width: 100px;" src="img/bike-b-removebg-preview.png" class="card-img-top " alt="..."></center>
+                      <div class="card-body">
+                       <h4 class="card-title text-center mb-2 text-warning">Lithium Battery</h4> 
+                       <center> <p class="card-text text-white ">1000 cycles of charge</p></center>
+                      </div>
+                    </div>
+               
+              </div>
+              
+            </div>
+        </div>
+  
+      </section>
+      <section id="Imformation">
+        <div class="card  bg-success p-2 text-dark bg-opacity-100 " >
+          <div class="card-body borde border-successr">
+            <h1 class="card-title text-center">ALLROND <span class="text-warning "> JAPAN</span></h1>
+           <center> <p class="card-text text-center text-white">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.Hit the streets and traffic jams with this top-notch city bike. Phnom Penh front and rear alloy brakes, a Shimano 6-speed drivetrain, and RevoShift grip shifters for safety, precision, and total control. Includes fenders and rear rack, wheels size 700x35C.</p>
+  
+           </div>
+           <div class="card mb-5 borde border-successr bg-success p-2 text-dark bg-opacity-100">
+           <center> <img style="max-width: 30rem;" src="img/Screenshot 2024-12-26 015233.png" class="card-img" alt="..."></center> 
+            
+           </div>
+          </div>
+      
+      </section>
+
+
+      <section id="From">
+        
+    
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <br><br>
+              <div class="card">
+                
+                <div class="card-body">
+                  <img height="440px" src="img/download (4).png" class="card-img" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3 ">
+              <div class="card ">
+                <div class="card-body">
+                  <h5 class="card-title "><b>ALLRONDS Pre-Sale</b></h5>
+                  <p class="card-text">Thank you for interested in what we do. Let's get stared.</p>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="ALLRONDS Owner Name" aria-label="First name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Email Address" aria-label="Email">
+                      </div>
+                      </div>
+                      <br><div class="row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Phone Number" aria-label="First name">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="ALLRONDS Electric Bike" aria-label="Email">
+                        </div>
+                        </div>   
+                        <br><p>Which size of ALLRONDS do you want to have?</p>
+                       
+                        <br><p>How will you pay to ALLRONDS?</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                        <a href="html/QR.html"> ABA</a> 
+                          </label>
+                        </div>
+                       <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                          <label class="form-check-label" for="flexRadioDefault2">
+                          <a href="html/NESI.html">ACLEDA</a>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                       <label class="form-check-label" for="flexRadioDefault2">
+                            OTHER
+                          </label>
+                        </div>
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                          <label for="floatingTextarea">Comments</label>
+                        </div>
+                        <center><br><input class= "btn btn-primary" type="submit" value="Submit"></center>
+                </div>
+              </div>
+            </div>
+         
+      </section>
+      <footer class="bg-dark text-white py-4">
+        <div class="container bg-dark">
+          <div class="text-center">
+            <div class="card-header "></div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Get REI apps for shopping & adventure</h5>
+            </div>
+          </div>
+  
+          <div class="container d-flex justify-content-around mt-4">
+            <div class="card mb-3" style="max-width: 840px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <center>
+                    <img
+                      src="img/Social_social_google_play_store-64 (1).webp"
+                      class="m-lg-2 rounded-start"
+                      alt="..."
+                    />
+                  </center>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title1 mt-3">PlayStore</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="img/Pasted image.png"
+                    class="img-fluid rounded-start mt-1"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title1 mt-3">App Store</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4 mt-2">
+                  <img
+                    src="img/Pasted image (2).png"
+                    class="img-fluid rounded-start mt-1"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title1 mt-2">Google</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row">
+            <!-- Column 1 -->
+            <div class="col-md-4">
+              <h5>About Us</h5>
+              <p class="ms-2">
+                Cambodia, is a newly established business in Cambodia focused on
+                selling electric bikes. Recognizing the growing trend of
+                eco-friendly transportation in the country,
+              </p>
+            </div>
+            <!-- Column 2 -->
+            <div class="col-md-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Experience</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Features</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Column 3 -->
+            <div class="col-md-4">
+              <h5>Contact Us</h5>
+              <p><i class="bi bi-telephone"></i> +972489610</p>
+              <p><i class="bi bi-envelope"></i> hort.lymeng@institute.pse.ngo</p>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <p class="mb-0">&copy; 2024 Your Company. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
